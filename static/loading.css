@@ -1,0 +1,22 @@
+.box {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-content: center;
+  background: #1f385a;
+  z-index: 999;
+}
+.single {
+  transform: scale(0.6) rotate(0);
+
+  animation: spin 2s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: scale(0.6) rotate(1turn);
+  }
+}
